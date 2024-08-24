@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Image After Delay</title>
+    <style>
+        #myImage {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="myImage" src="bike.webp" alt="My Image">
+
+    <script>
+        function showImage() {
+            const image = document.querySelector('#myImage');
+            image.style.display = 'block';
+        }
+        setTimeout(showImage, 2000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Styling</title>
+    <style>
+        .styled-button {
+            color: white;
+            border: 2px solid #af4c65;
+            background-color: #4caf78;
+            height: 100px;
+            width: 200px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">Click me!</button>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            this.classList.add("styled-button");
+        });
+    </script>
+</body>
+</html>
